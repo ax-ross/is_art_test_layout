@@ -6,26 +6,31 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    <div class="top-header bg-light mb-3">
-        <div class="container-fluid header-container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="img/icons/Location.svg" alt="location">
-                    г. Москва, ул. Вавилова, д 5, стр 2
+    <div class="top-header bg-light">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-9 d-flex">
+                    <div class="top-header-text me-5">
+                        <img src="img/icons/Location.svg" alt="location">
+                        г. Москва, ул. Вавилова, д 5, стр 2
+                    </div>
+                    <div class="top-header-text me-5 ms-3">
+                        <img src="img/icons/time.svg" alt="time"> Пн - Пт 8:00 - 18:00 / Вскр 8:00 - 14:00
+                    </div>
+                    <div class="top-header-text me-5 ms-3">
+                        <img src="img/icons/Calling.svg" alt="calling"> 8 (495) 000-00-00 <span
+                            class="ms-2">Перезвонить?</span>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/icons/time.svg" alt="time"> Пн - Пт 8:00 - 18:00 / Вскр 8:00 - 14:00
-                </div>
-                <div class="col-md-3">
-                    <img src="img/icons/Calling.svg" alt="calling"> 8 (495) 000-00-00 <span class="ms-2">Перезвонить?</span>
-                </div>
-                <div class="col-md-3">
+
+                <div class="col-md-3 top-header-navigate-text text-end">
                     <span class="me-3">
                         О нас
                     </span>
@@ -35,24 +40,22 @@
                     <span class="me-3">
                         Блог
                     </span>
-                    <span class="me-3">
+                    <span>
                         Контакты
                     </span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bottom-header">
+    <div class="bottom-header my-3">
         <div class="container">
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-1 mx-3">
-                    <img src="img/icons/logo.svg" alt="logo">
-                </div>
-                <div class="col-md-1 mx-3">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 d-flex">
+                    <img class="me-4" src="img/icons/logo.svg" alt="logo">
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn btn-primary" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                            Каталог
+                            <span class="d-flex catalog-btn">Каталог <img class="mx-2" src="img/icons/Down.svg" alt=""></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="#">1</a></li>
@@ -61,22 +64,26 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 mx-3">
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
-                </div>
-                <div class="col d-flex">
-                    <img src="img/icons/Cart.svg" alt="cart" width="40vh">
-                    <div class="d-flex flex-column me-3">
-                        <span>Корзина</span>
-                        <span class="fw-bold">0 &#8381;</span>
+
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="input-group group-search">
+                        <input type="text" class="form-control border-end-0 input-search">
+                        <div class="input-group-text input-group-search">
+                            <button class="btn btn-primary search-btn" type="button"><i class="bi bi-search"></i>
+                            </button>
+                        </div>
                     </div>
-                    <img src="img/icons/Heart-header.svg" alt="" width="40vh">
-                    <div class="d-flex flex-column">
+                </div>
+                <div class="col-md-3 d-flex justify-content-end">
+                    <img src="img/icons/Cart.svg" alt="cart" class="cart-icon me-2">
+                    <div class="d-flex flex-column me-3 cart-text">
+                        <span>Корзина</span>
+                        <span class="cart-bold">0 &#8381;</span>
+                    </div>
+                    <img src="img/icons/Heart-header.svg" alt="" class="favorite-icon ms-3 me-2">
+                    <div class="d-flex flex-column favorite-text">
                         <span>Изрбранное</span>
-                        <span class="fw-bold">0 товаров</span>
+                        <span class="favorite-bold">0 товаров</span>
                     </div>
                 </div>
             </div>
@@ -549,80 +556,81 @@
     </div>
     <div class="bottom-footer">
         <div class="container">
-                <div class="row">
-                    <div class="col-md-3 mb-5">
-                        <h3 class="fw-bold">SVK</h3>
-                        <span>Интернет-магазин сантехники</span>
-                            <p>Наш адрес:</p>
-                            <div>
-                                <img src="img/icons/Location-footer.svg" alt="location">
-                                г. Москва, ул. Вавилова, д 5, стр 2
-                            </div>
-                            <div>
-                                <img src="img/icons/Time-footer.svg" alt="time"> Пн - Пт 8:00 - 18:00 / Вскр 8:00 - 14:00
-                            </div>
+            <div class="row">
+                <div class="col-md-3 mb-5">
+                    <h3 class="fw-bold">SVK</h3>
+                    <span>Интернет-магазин сантехники</span>
+                    <p>Наш адрес:</p>
+                    <div>
+                        <img src="img/icons/Location-footer.svg" alt="location">
+                        г. Москва, ул. Вавилова, д 5, стр 2
                     </div>
-
-                    <div class="col-md-2">
-                        <p class="fw-bold">Сантехника</p>
-                        <ul class="list-unstyled">
-                            <li><a href="">Фитинги</a></li>
-                            <li><a href="">Гофры</a></li>
-                            <li><a href="">Сифоны</a></li>
-                            <li><a href="">Переходники</a></li>
-                            <li><a href="">Углы переходные</a></li>
-                            <li><a href="">Соединители</a></li>
-                            <li><a href="">Фитинги</a></li>
-                            <li><a href="">Сифоны</a></li>
-                        </ul>
-                        <a href="" class="custom-link">Показать ещё</a>
-                    </div>
-
-                    <div class="col-md-2">
-                        <p class="fw-bold">Вентиляция</p>
-                        <ul class="list-unstyled">
-                            <li><a href="">Воздушные фильтры</a> </li>
-                            <li><a href="">Радиаторные решетки</a> </li>
-                            <li><a href="">Вентиляционные люки</a> </li>
-                        </ul>
-                        <p class="fw-bold mt-3">Канализация</p>
-                        <ul class="list-unstyled">
-                            <li><a href="">Трубы</a></li>
-                            <li><a href="">Фитинги</a></li>
-                            <li><a href="">Утеплители</a></li>
-                            <li><a href="">Сливы</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-2">
-                        <p class="fw-bold">Смеси</p>
-                        <ul class="list-unstyled">
-                            <li><a href="">Штукатурка</a></li>
-                            <li><a href="">Плиточный клей</a> </li>
-                            <li><a href="">Пескобетон</a></li>
-                        </ul>
-                        <p class="fw-bold mt-3">Полезная информация</p>
-                        <ul class="list-unstyled">
-                            <li><a href="">О компании</a></li>
-                            <li><a href="">Блог</a></li>
-                            <li><a href="">Оплата  и доставка</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="fw-bold">Будьте в курсе наших новостей</p>
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="Укажите ваш Email">
-                            <button type="submit" class="btn btn-primary my-3">Отправить</button>
-                        </form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Нажимая на кнопку, я принимаю <a class="custom-link" href="">Политику в области обработки и защиты персональных данных</a>  и соглашаюсь получать сообщения
-                            </label>
-                        </div>
+                    <div>
+                        <img src="img/icons/Time-footer.svg" alt="time"> Пн - Пт 8:00 - 18:00 / Вскр 8:00 - 14:00
                     </div>
                 </div>
+
+                <div class="col-md-2">
+                    <p class="fw-bold">Сантехника</p>
+                    <ul class="list-unstyled">
+                        <li><a href="">Фитинги</a></li>
+                        <li><a href="">Гофры</a></li>
+                        <li><a href="">Сифоны</a></li>
+                        <li><a href="">Переходники</a></li>
+                        <li><a href="">Углы переходные</a></li>
+                        <li><a href="">Соединители</a></li>
+                        <li><a href="">Фитинги</a></li>
+                        <li><a href="">Сифоны</a></li>
+                    </ul>
+                    <a href="" class="custom-link">Показать ещё</a>
+                </div>
+
+                <div class="col-md-2">
+                    <p class="fw-bold">Вентиляция</p>
+                    <ul class="list-unstyled">
+                        <li><a href="">Воздушные фильтры</a></li>
+                        <li><a href="">Радиаторные решетки</a></li>
+                        <li><a href="">Вентиляционные люки</a></li>
+                    </ul>
+                    <p class="fw-bold mt-3">Канализация</p>
+                    <ul class="list-unstyled">
+                        <li><a href="">Трубы</a></li>
+                        <li><a href="">Фитинги</a></li>
+                        <li><a href="">Утеплители</a></li>
+                        <li><a href="">Сливы</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <p class="fw-bold">Смеси</p>
+                    <ul class="list-unstyled">
+                        <li><a href="">Штукатурка</a></li>
+                        <li><a href="">Плиточный клей</a></li>
+                        <li><a href="">Пескобетон</a></li>
+                    </ul>
+                    <p class="fw-bold mt-3">Полезная информация</p>
+                    <ul class="list-unstyled">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">Оплата и доставка</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="fw-bold">Будьте в курсе наших новостей</p>
+                    <form action="">
+                        <input type="text" class="form-control" placeholder="Укажите ваш Email">
+                        <button type="submit" class="btn btn-primary my-3">Отправить</button>
+                    </form>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Нажимая на кнопку, я принимаю <a class="custom-link" href="">Политику в области обработки и
+                            защиты персональных данных</a> и соглашаюсь получать сообщения
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="bg-light">
