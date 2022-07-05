@@ -26,7 +26,7 @@
                     </div>
                     <div class="top-header-text me-5 ">
                         <img src="img/icons/Calling.svg" alt="calling"> 8 (495) 000-00-00 <span
-                            class="ms-2">Перезвонить?</span>
+                            class="ms-2 re-call">Перезвонить?</span>
                     </div>
                 </div>
 
@@ -101,11 +101,11 @@
         <button class="btn btn-primary-outline mt-5"><img src="img/icons/arrow.svg" alt="arrow"></button>
     </div>
 </section>
-<section class="category mt-5">
+<section class="category my-5">
     <div class="container">
-        <h2 class="mt-2 mb-5">Выберите интересующую категорию товара</h2>
+        <h2 class="mt-2 mb-4">Выберите интересующую категорию товара</h2>
         <div class="row d-flex justify-content-around">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="img/plumbing.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="img/ventilation.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
@@ -121,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="img/sewerage.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
@@ -135,16 +135,16 @@
 
 <section class="hits my-5">
     <div class="container">
-        <h2 class="mt-2 mb-5">Хиты продаж</h2>
-        <ul class="nav d-flex " id="myTab" role="tablist">
-            <li class="nav-item me-3" role="presentation">
+        <h2 class="my-4">Хиты продаж</h2>
+        <ul class="nav d-flex ms-2" id="myTab" role="tablist">
+            <li class="nav-item me-3 my-1" role="presentation">
                 <button class="btn btn-outline-primary active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
                         type="button"
                         role="tab" aria-controls="all" aria-selected="true">Все товары
                 </button>
             </li>
 
-            <li class="nav-item me-3" role="presentation">
+            <li class="nav-item me-3 my-1" role="presentation">
                 <button class="btn btn-outline-primary" id="plumbing-tab" data-bs-toggle="tab"
                         data-bs-target="#plumbing" type="button"
                         role="tab"
@@ -152,13 +152,13 @@
                 </button>
             </li>
 
-            <li class="nav-item me-3" role="presentation">
+            <li class="nav-item me-3 my-1" role="presentation">
                 <button class="btn btn-outline-primary" id="ventilation-tab" data-bs-toggle="tab"
                         data-bs-target="#ventilation" type="button"
                         role="tab" aria-controls="ventilation" aria-selected="false">Вентиляция
                 </button>
             </li>
-            <li class="nav-item me-3" role="presentation">
+            <li class="nav-item me-3 my-1" role="presentation">
                 <button class="btn btn-outline-primary" id="sewerage-tab" data-bs-toggle="tab"
                         data-bs-target="#sewerage" type="button"
                         role="tab"
@@ -169,8 +169,8 @@
         <div class="tab-content bg-white" id="myTabContent">
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="d-flex flex-wrap justify-content-around ">
-                    <div class="card border-0 mt-3 product col-md-2 ">
-                        <div class="d-flex justify-content-between">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3 ">
+                        <div class="d-flex justify-content-between p-3">
                             <button class="btn btn-primary">Хит продаж</button>
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
@@ -182,18 +182,22 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
 
 
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2 ">
-                        <div class="d-flex justify-content-between">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="d-flex justify-content-between p-3">
                             <button class="btn btn-primary">Хит продаж</button>
                             <a href=""><img src="img/icons/Избранное.svg" alt="" width="25px"></a>
                         </div>
@@ -204,17 +208,20 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2 ">
-                        <div class="text-end">
-
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="text-end p-3">
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
                         <img src="img/products/product3.png" class="card-img-top" alt="...">
@@ -223,19 +230,20 @@
                             <div class="mt-auto text-start">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-danger">Под заказ</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-danger">Под заказ</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2 ">
-                        <div class="text-end">
-
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3 ">
+                        <div class="text-end p-3">
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
                         <img src="img/products/product4.png" class="card-img-top" alt="...">
@@ -245,10 +253,14 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
 
 
@@ -261,8 +273,8 @@
 
             <div class="tab-pane fade " id="plumbing" role="tabpanel" aria-labelledby="giro-tab">
                 <div class="d-flex flex-wrap  justify-content-around">
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="d-flex justify-content-between">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="d-flex justify-content-between p-3">
                             <button class="btn btn-primary">Хит продаж</button>
                             <a href=""><img src="img/icons/Избранное.svg" alt="" width="25px"></a>
                         </div>
@@ -273,18 +285,22 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
 
 
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="d-flex justify-content-between">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="d-flex justify-content-between p-3">
                             <button class="btn btn-primary">Хит продаж</button>
                             <a href=""><img src="img/icons/Избранное.svg" alt="" width="25px"></a>
                         </div>
@@ -295,16 +311,20 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="text-end">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="text-end p-3">
 
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
@@ -324,8 +344,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="text-end">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="text-end p-3">
 
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
@@ -336,10 +356,14 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
 
 
@@ -351,8 +375,8 @@
 
             <div class="tab-pane fade " id="ventilation" role="tabpanel" aria-labelledby="electro-tab">
                 <div class="d-flex flex-wrap justify-content-around">
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="text-end">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="text-end p-3">
 
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
@@ -363,18 +387,22 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
 
 
                             </div>
                         </div>
                     </div>
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="text-end">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="text-end p-3">
 
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
@@ -385,10 +413,14 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -398,8 +430,8 @@
 
             <div class="tab-pane fade" id="sewerage" role="tabpanel" aria-labelledby="seg-tab">
                 <div class="d-flex flex-wrap justify-content-around">
-                    <div class="card border-0 mt-3 product col-md-2">
-                        <div class="text-end">
+                    <div class="card border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="text-end p-3">
 
                             <a href=""><img src="img/icons/Heart.svg" alt="" width="25px"></a>
                         </div>
@@ -410,10 +442,14 @@
                                 <img class="my-1" src="img/icons/delivery.png" alt="">
                                 <p>Артикул: 859654-К</p>
                                 <p>Швеция Бренд <a href="">Gustavsberg</a></p>
-                                <div class="d-flex">
-                                    <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
-                                    <p class="me-5 text-success">В наличии</p>
-                                    <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <p class="card-text mb-1 me-2"><strong>6500 &#8381;</strong></p>
+                                        <p class="text-success">В наличии</p>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="mt-auto ms-3"><img src="img/icons/Корзина.svg" alt="Корзина"></a>
+                                    </div>
                                 </div>
 
 
@@ -427,9 +463,9 @@
     </div>
 </section>
 
-<section class="popular-brands">
+<section class="popular-brands my-5">
     <div class="container">
-        <h2>
+        <h2 class="mb-3">
             Популярные бренды сантехники
         </h2>
         <div class="row">
@@ -467,56 +503,66 @@
     </div>
 </section>
 
-<section class="mt-5">
+<section class="my-5">
     <div class="container">
-        <img src="img/example.jpg" alt="" style="float: right; height: 60vh">
-        <p class="fw-bold">
+        <img src="img/example.jpg" alt="" style="float: right; max-height: 36rem">
+        <p class="description-title-text">
             САНТЕХНИКА ДЛЯ ДОМА И ОФИСА, РОСКОШНАЯ И АСКЕТИЧНАЯ, ИЗЫСКАННАЯ И ФУНКЦИОНАЛЬНАЯ – ВСЕ НАЙДЕТСЯ В НАШЕМ
             ИНТЕРНЕТ-МАГАЗИНЕ
         </p>
-        <p>
-            Являясь онлайн-гипермаркетом сантехники в России, мы предлагаем выбор оборудования на любой вкус, имея в
-            ассортименте более 100 тыс. товаров: от аксессуаров до гидромассажного оборудования. В независимости от
-            того, где проходит ремонт: в домашней ванной или в месте общественного пользования всегда хочется
-            рассчитывать на качество и разумные цены.
-        </p>
-        <p>Наша компания имеет ряд положительных особенностей:
-        </p>
-        <ul>
-            <li>Неизменно качественная сертифицированная продукция, имеющая официальную гарантию;
-            </li>
-            <li>Производители, которые зарекомендовали себя как заслуживающие доверия потребителей;
-            </li>
-            <li>Тщательный анализ ассортимента рынка;
-            </li>
-            <li>Удобный сайт, который избавит от изматывающих поездок по магазинам и бесконечного плавания в интернете в
-                поисках необходимого;
-            </li>
-            <li>Фото товаров, облегчающие выбор, позволяя найти необходимый товар не только по техническим параметрам;
-            </li>
-            <li>Отзывы покупателей и наш многолетний опыт;
-            </li>
-            <li>Возможность оформить рассрочку или кредит.
-            </li>
-        </ul>
-        <p>
-            Продажа оборудования осуществляется круглосуточно, а быстрая и бережная доставка, оплата любым удобным
-            способом и услуга установки способны избавить покупателя от ненужных забот.
-        </p>
-        <p>С нами выбор сантехники станет легким и удобным, а не обременительным занятием. Закажите обратный звонок -
-            получите квалифицированную консультацию и помощь в подборе оборудования.</p>
+        <div class="description-main-text">
+            <p>
+                Являясь онлайн-гипермаркетом сантехники в России, мы предлагаем выбор оборудования на любой вкус, имея в
+                ассортименте более 100 тыс. товаров: от аксессуаров до гидромассажного оборудования. В независимости от
+                того, где проходит ремонт: в домашней ванной или в месте общественного пользования всегда хочется
+                рассчитывать на качество и разумные цены.
+            </p>
+            <p>Наша компания имеет ряд положительных особенностей:
+            </p>
+            <ul>
+                <li>Неизменно качественная сертифицированная продукция, имеющая официальную гарантию;
+                </li>
+                <li>Производители, которые зарекомендовали себя как заслуживающие доверия потребителей;
+                </li>
+                <li>Тщательный анализ ассортимента рынка;
+                </li>
+                <li>Удобный сайт, который избавит от изматывающих поездок по магазинам и бесконечного плавания в интернете в
+                    поисках необходимого;
+                </li>
+                <li>Фото товаров, облегчающие выбор, позволяя найти необходимый товар не только по техническим параметрам;
+                </li>
+                <li>Отзывы покупателей и наш многолетний опыт;
+                </li>
+                <li>Возможность оформить рассрочку или кредит.
+                </li>
+            </ul>
+            <p>
+                Продажа оборудования осуществляется круглосуточно, а быстрая и бережная доставка, оплата любым удобным
+                способом и услуга установки способны избавить покупателя от ненужных забот.
+            </p>
+            <p>С нами выбор сантехники станет легким и удобным, а не обременительным занятием. Закажите обратный звонок -
+                получите квалифицированную консультацию и помощь в подборе оборудования.</p>
+        </div>
     </div>
 </section>
 
-<section class="interesting mt-4">
+<section class="interesting my-4">
     <div class="container">
-        <h4 class="mb-3">Вам может быть интересно</h4>
+        <div class="row d-flex flex-row">
+            <div class="col">
+                <h4 class="mb-4">Вам может быть интересно</h4>
+
+            </div>
+            <div class="col text-end">
+                <a class="show-all" href="">Показать всё <img src="img/icons/right_arrow.svg" alt=""></a>
+            </div>
+        </div>
         <div class="row d-flex">
             <div class="card col border-0" style="width: 18rem;">
                 <img src="img/interesting/image1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Какие бывают виды покрытий смесителей</h5>
-                    <p class="card-text">От типа покрытия смесителя зависит не только его внешний вид, но и некоторые
+                    <h5 class="card-title interesting-title">Какие бывают виды покрытий смесителей</h5>
+                    <p class="card-text interesting-text">От типа покрытия смесителя зависит не только его внешний вид, но и некоторые
                         особенности использования данных приборов. Коротко о типах покрытия смеси...</p>
                 </div>
             </div>
@@ -524,16 +570,16 @@
             <div class="card col border-0" style="width: 18rem;">
                 <img src="img/interesting/image2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Что такое и как выглядят раковины над стиральной машиной в ванной</h5>
-                    <p class="card-text">От типа покрытия смесителя зависит не только его внешний вид, но и некоторые
+                    <h5 class="card-title interesting-title">Что такое и как выглядят раковины над стиральной машиной в ванной</h5>
+                    <p class="card-text interesting-text">От типа покрытия смесителя зависит не только его внешний вид, но и некоторые
                         особенности использования данных прибо...</p>
                 </div>
             </div>
             <div class="card col border-0" style="width: 18rem;">
                 <img src="img/interesting/image3.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Какие бывают виды покрытий смесителей</h5>
-                    <p class="card-text">От типа покрытия смесителя зависит не только его внешний вид, но и некоторые
+                    <h5 class="card-title interesting-title">Какие бывают виды покрытий смесителей</h5>
+                    <p class="card-text interesting-text">От типа покрытия смесителя зависит не только его внешний вид, но и некоторые
                         особенности использования данных приборов. Коротко о типах покрытия смеси...</p>
                 </div>
             </div>
@@ -544,34 +590,34 @@
 </section>
 
 <footer>
-    <div class="top-footer mb-5">
+    <div class="top-footer my-5">
         <div class="container py-5 content-preview text-white d-flex flex-column text-center justify-content-center align-items-center">
-            <p class="mt-3 fw-bold">Поможем определиться с выбором</p>
-            <p class="mb-0 fw-bold">
+            <p class="mt-3 footer-large-text">Поможем определиться с выбором</p>
+            <p class="mb-0 footer-medium-text">
                 Ответим на вопросы, примем заказ в г. Москва по телефону
             </p>
-            <p class="mt-0 fw-bold fs-3">8 (000) 000-00-00</p>
-            <p class="fw-bold">Заказать обратный звонок</p>
+            <p class="mt-3 footer-large-text">8 (000) 000-00-00</p>
+            <p class="footer-small-text">Заказать обратный звонок</p>
         </div>
     </div>
-    <div class="bottom-footer">
+    <div class="bottom-footer mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mb-5">
-                    <h3 class="fw-bold">SVK</h3>
+                    <h3 class="footer-logo-text">SVK</h3>
                     <span>Интернет-магазин сантехники</span>
-                    <p>Наш адрес:</p>
-                    <div>
+                    <p class="mt-5">Наш адрес:</p>
+                    <div class="mb-3">
                         <img src="img/icons/Location-footer.svg" alt="location">
                         г. Москва, ул. Вавилова, д 5, стр 2
                     </div>
-                    <div>
+                    <div class="mt-3">
                         <img src="img/icons/Time-footer.svg" alt="time"> Пн - Пт 8:00 - 18:00 / Вскр 8:00 - 14:00
                     </div>
                 </div>
 
                 <div class="col-md-2">
-                    <p class="fw-bold">Сантехника</p>
+                    <p class="footer-bold-text">Сантехника</p>
                     <ul class="list-unstyled">
                         <li><a href="">Фитинги</a></li>
                         <li><a href="">Гофры</a></li>
@@ -580,19 +626,19 @@
                         <li><a href="">Углы переходные</a></li>
                         <li><a href="">Соединители</a></li>
                         <li><a href="">Фитинги</a></li>
-                        <li><a href="">Сифоны</a></li>
+                        <li class="mb-4"><a href="">Сифоны</a></li>
                     </ul>
                     <a href="" class="custom-link">Показать ещё</a>
                 </div>
 
                 <div class="col-md-2">
-                    <p class="fw-bold">Вентиляция</p>
+                    <p class="footer-bold-text">Вентиляция</p>
                     <ul class="list-unstyled">
                         <li><a href="">Воздушные фильтры</a></li>
                         <li><a href="">Радиаторные решетки</a></li>
                         <li><a href="">Вентиляционные люки</a></li>
                     </ul>
-                    <p class="fw-bold mt-3">Канализация</p>
+                    <p class="footer-bold-text mt-5">Канализация</p>
                     <ul class="list-unstyled">
                         <li><a href="">Трубы</a></li>
                         <li><a href="">Фитинги</a></li>
@@ -602,13 +648,13 @@
                 </div>
 
                 <div class="col-md-2">
-                    <p class="fw-bold">Смеси</p>
+                    <p class="footer-bold-text">Смеси</p>
                     <ul class="list-unstyled">
                         <li><a href="">Штукатурка</a></li>
                         <li><a href="">Плиточный клей</a></li>
                         <li><a href="">Пескобетон</a></li>
                     </ul>
-                    <p class="fw-bold mt-3">Полезная информация</p>
+                    <p class="footer-bold-text mt-5">Полезная информация</p>
                     <ul class="list-unstyled">
                         <li><a href="">О компании</a></li>
                         <li><a href="">Блог</a></li>
@@ -617,10 +663,13 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="fw-bold">Будьте в курсе наших новостей</p>
+                    <p class="footer-bold-text">Будьте в курсе наших новостей</p>
                     <form action="">
                         <input type="text" class="form-control" placeholder="Укажите ваш Email">
-                        <button type="submit" class="btn btn-primary my-3">Отправить</button>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary my-3">Отправить</button>
+                        </div>
+
                     </form>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -633,9 +682,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-light">
+    <div class="bg-light under-footer">
         <div class="container">
-            <div class="row p-3">
+            <div class="row p-2">
                 <div class="col">Политика конфиденциальности</div>
                 <div class="col">Пользовательское соглашение</div>
                 <div class="col">Разработано <img src="img/icons/is_art.svg" alt=""></div>

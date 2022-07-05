@@ -76,6 +76,10 @@ body {
     color: black;
 }
 
+.list-unstyled li {
+    margin-bottom: 12px;
+}
+
 .custom-link {
     color: #6d2eff;
 }
@@ -179,9 +183,105 @@ body {
     padding: 12px;
 }
 
+.description-title-text{
+    font-weight: 500;
+    font-size: 20px;
+    color: #212121;
+    line-height: 30px;
+}
+
+.description-main-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
+
+.popular-brands img:hover{
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.interesting-title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.interesting-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
+
+.footer-large-text{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.footer-medium-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer-small-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.re-call{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.show-all{
+    color: #212121;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+footer{
+    font-size: 16px;
+    line-height: 19px;
+    color: #212121;
+}
+
+h2{
+    color: #212121;
+}
+
+.footer-bold-text{
+    font-weight: 600;
+}
+
+.footer-logo-text{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+}
+
+.under-footer{
+    color: #212121;
+    font-size: 16px;
+    line-height: 19px;
+}
 
 @media only screen and (max-width: 1200px) {
     .logo, .search, .cart-favorite{
         padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .product{
+        width: 19vw;
     }
 }
