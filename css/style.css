@@ -609,6 +609,55 @@ h2 {
 /*    display: none;*/
 /*}*/
 
+
+/* swiper */
+.arrow-swiper{
+    position: relative;
+}
+
+.swiper-button-next-unique {
+    background-image: url("../img/icons/right_arrow_btn.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1385px;
+    top: 290px;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.swiper-button-next::after {
+    content: none;
+}
+
+.swiper-button-prev-unique {
+    background-image: url("../img/icons/left_arrow_btn.svg");
+    position: absolute;
+    top: 290px;
+    left: -165px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+    content: none !important;
+}
+
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+    content: none !important;
+}
+
+
 @media only screen and (max-width: 1200px) {
     .logo, .search, .cart-favorite {
         padding: 10px;
