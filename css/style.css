@@ -1,101 +1,109 @@
 body {
     font-family: 'Inter';
 }
-.preview{
+
+.preview {
     background-image: url("../img/background.jpg");
 }
-.top-footer{
+
+.top-footer {
     background-image: url("../img/footer-background.jpg");
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #6d2eff;
     border-color: #6d2eff;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #6229e6;
     border-color: #6229e6;
 }
 
-.btn-primary.active{
+.btn-primary.active {
     background-color: #6229e6;
     border-color: #6229e6;
 }
 
-.btn-primary:active{
+.btn-primary:active {
     background-color: #6229e6;
     border-color: #6229e6;
 }
 
-.btn-primary.active:focus{
-    box-shadow: 0 0 0 .25rem rgba(109,46,255,.5)
+.btn-primary.active:focus {
+    box-shadow: 0 0 0 .25rem rgba(109, 46, 255, .5);
+    background-color: #6229e6;
 }
 
-.btn-primary:focus{
-    box-shadow: 0 0 0 .25rem rgba(109,46,255,.5)
+.btn-primary:focus {
+    box-shadow: 0 0 0 .25rem rgba(109, 46, 255, .5);
+    background-color: #6229e6;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     border-color: #6d2eff;
     color: #6d2eff;
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     background-color: #6229e6;
     border-color: #6229e6;
     color: white;
 }
 
-.btn-outline-primary.active{
-    background-color: #6229e6;
-    border-color: #6229e6;
-    color: white;
-}
-.btn-outline-primary:active{
+.btn-outline-primary.active {
     background-color: #6229e6;
     border-color: #6229e6;
     color: white;
 }
 
-.btn-outline-primary.active:focus{
-    box-shadow: 0 0 0 .25rem rgba(109,46,255,.5)
-}
-.btn-outline-primary:focus{
-    box-shadow: 0 0 0 .25rem rgba(109,46,255,.5)
+.btn-outline-primary:active {
+    background-color: #6229e6;
+    border-color: #6229e6;
+    color: white;
 }
 
-.list-unstyled a{
+.btn-outline-primary.active:focus {
+    box-shadow: 0 0 0 .25rem rgba(109, 46, 255, .5)
+}
+
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 .25rem rgba(109, 46, 255, .5)
+}
+
+.list-unstyled a {
     text-decoration: none;
     color: black;
 }
 
-.custom-link{
+.custom-link {
     color: #6d2eff;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
-.card{
+
+.card {
     margin-right: 10px;
 }
 
-.top-header-text{
+.top-header-text {
     font-size: 12px;
     line-height: 15px;
     color: #747474
 }
 
-.top-header-navigate-text{
+.top-header-navigate-text {
     font-size: 12px;
     line-height: 15px;
 }
 
-.btn{
+.btn {
     border-radius: 9px;
 }
 
-.catalog-btn{
+.catalog-btn {
     font-size: 16px;
     line-height: 19px;
 }
@@ -104,39 +112,41 @@ body {
     border-color: #6d2eff;
 }
 
-.input-group-text{
+.input-group-text {
     /*background-color: #6d2eff;*/
     border-radius: 9px;
 }
+
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
     margin-left: -1px;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
 }
 
-.input-search{
+.input-search {
     padding: 0;
     margin-right: -10px;
     border-radius: 9px;
 }
-.form-control:focus{
+
+.form-control:focus {
     box-shadow: none;
     z-index: 1 !important;
     border-color: #6d2eff;
 }
 
-.input-group-search{
+.input-group-search {
     align-items: normal !important;
     padding: 0 !important;
     border: 1px solid #6d2eff;
 }
 
-.search-btn{
+.search-btn {
     width: 73px;
     z-index: 4;
 }
 
-.cart-text, .favorite-text{
+.cart-text, .favorite-text {
     font-size: 12px;
     color: #747474
 }
@@ -144,4 +154,34 @@ body {
 .favorite-bold, .cart-bold {
     color: #212121;
     font-weight: 600;
+}
+
+.preview-small-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px
+}
+
+.preview-large-text{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61px;
+}
+
+.cart-favorite{
+    padding-left: 30px;
+}
+
+.go-catalog{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    padding: 12px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .logo, .search, .cart-favorite{
+        padding: 10px;
+    }
 }
