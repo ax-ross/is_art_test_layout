@@ -728,6 +728,40 @@ h2 {
 
 }
 
+.swiper-button-next-brands {
+    background-image: url("../img/icons/right_arrow_btn.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1385px;
+    top: 125px;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper-button-prev-brands{
+    background-image: url("../img/icons/left_arrow_btn.svg");
+    position: absolute;
+    top: 125px;
+    left: -165px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.brand-slide{
+    width: 1280px !important;
+}
+
+.mySwiper5{
+    padding-left: 0 !important;
+}
+
 .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
     content: none !important;
 }
