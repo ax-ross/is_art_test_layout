@@ -10,12 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-
 </head>
 <body>
 <header>
@@ -102,7 +96,7 @@
 
 
 <section class="preview">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-interval="false" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="pt-5 content-preview text-white d-flex flex-column text-center justify-content-center align-items-center">
@@ -192,12 +186,6 @@
 </section>
 
 <section class="hits">
-    <!--    <div class="btn-left-cont">-->
-    <!--        <a href=""><img class="btn-left" src="img/icons/left_arrow_btn.svg" alt=""></a>-->
-    <!--    </div>-->
-    <!--    <div class="btn-right-cont">-->
-    <!--        <a href=""><img class="btn-right"  src="img/icons/right_arrow_btn.svg" alt=""></a>-->
-    <!--    </div>-->
     <div class="container">
         <h2 class="my-4">Хит продаж</h2>
         <ul class="nav d-flex" id="myTab" role="tablist">
@@ -245,7 +233,6 @@
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
-
                             <img src="img/products/product1.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
@@ -273,7 +260,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3">
                             <div class="d-flex justify-content-between hit-heart">
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href=""><img src="img/icons/Избранное.svg" alt=""></a>
@@ -285,7 +272,7 @@
                             <div class="card-body card-body-product d-flex flex-column">
                                 <div class="mt-3 ms-1 pt-4 text-start">
                                     <div class="product-description">
-                                        <p class="card-description-text">Артикул: 859654-К</p>
+                                        <p class="card-description-text mt-3">Артикул: 859654-К</p>
                                         <p class="card-title-product">Унитаз строительный Gesso с бачком</p>
                                         <p class="card-description-text">Швеция Бренд <a href="">Gustavsberg</a></p>
                                         <div class="d-flex justify-content-between">
@@ -304,8 +291,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide border-0 mt-3 product col-xl-2 col-md-3">
-                            <div class="text-end p-3 only-heart">
+                        <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3 ">
+                            <div class="d-flex justify-content-between hit-heart">
+                                <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
                             <img src="img/products/product3.png" class="card-img-top" alt="...">
@@ -336,14 +324,15 @@
                             </div>
                         </div>
                         <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3 ">
-                            <div class="text-end p-3 only-heart">
+                            <div class="d-flex justify-content-between hit-heart">
+                                <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
                             <img src="img/products/product4.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
                             </div>
-                            <div class="card-body d-flex flex-column card-body-product">
+                            <div class="card-body card-body-product d-flex flex-column">
                                 <div class="mt-3 ms-1 text-start">
                                     <img class="p-0" src="img/icons/delivery.png" alt="">
                                     <div class="product-description">
@@ -367,20 +356,7 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-                <script>
-                    var swiper = new Swiper(".mySwiper", {
-                        slidesPerView: 4,
-                        spaceBetween: 10,
-                        loop: true,
-                        navigation: {
-                            nextEl: ".swiper-button-next-unique",
-                            prevEl: ".swiper-button-prev-unique",
-                        },
-                    });
-                </script>
             </div>
 
             <div class="tab-pane fade " id="plumbing" role="tabpanel">
@@ -395,7 +371,6 @@
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
-
                             <img src="img/products/product1.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
@@ -423,7 +398,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3">
                             <div class="d-flex justify-content-between hit-heart">
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href=""><img src="img/icons/Избранное.svg" alt=""></a>
@@ -435,7 +410,7 @@
                             <div class="card-body card-body-product d-flex flex-column">
                                 <div class="mt-3 ms-1 pt-4 text-start">
                                     <div class="product-description">
-                                        <p class="card-description-text">Артикул: 859654-К</p>
+                                        <p class="card-description-text mt-3">Артикул: 859654-К</p>
                                         <p class="card-title-product">Унитаз строительный Gesso с бачком</p>
                                         <p class="card-description-text">Швеция Бренд <a href="">Gustavsberg</a></p>
                                         <div class="d-flex justify-content-between">
@@ -454,8 +429,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide border-0 mt-3 product col-xl-2 col-md-3">
-                            <div class="text-end p-3 only-heart">
+                        <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3 ">
+                            <div class="d-flex justify-content-between hit-heart">
+                                <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
                             <img src="img/products/product3.png" class="card-img-top" alt="...">
@@ -486,14 +462,15 @@
                             </div>
                         </div>
                         <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3 ">
-                            <div class="text-end p-3 only-heart">
+                            <div class="d-flex justify-content-between hit-heart">
+                                <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
                             <img src="img/products/product4.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
                             </div>
-                            <div class="card-body d-flex flex-column card-body-product">
+                            <div class="card-body card-body-product d-flex flex-column">
                                 <div class="mt-3 ms-1 text-start">
                                     <img class="p-0" src="img/icons/delivery.png" alt="">
                                     <div class="product-description">
@@ -517,20 +494,7 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-                <script>
-                    var swiper = new Swiper(".mySwiper2", {
-                        slidesPerView: 4,
-                        spaceBetween: 10,
-                        loop: true,
-                        navigation: {
-                            nextEl: ".swiper-button-next-plumbing",
-                            prevEl: ".swiper-button-prev-plumbing",
-                        },
-                    });
-                </script>
             </div>
             <div class="tab-pane fade " id="ventilation" role="tabpanel">
                 <div class="arrow-swiper">
@@ -544,7 +508,6 @@
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
-
                             <img src="img/products/product1.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
@@ -572,17 +535,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide border-0 mt-3 product col-xl-2 col-md-3">
+                        <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3 ">
                             <div class="d-flex justify-content-between hit-heart">
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
-                                <a href=""><img src="img/icons/Избранное.svg" alt=""></a>
+                                <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
-                            <img src="img/products/product2.png" class="card-img-top" alt="...">
+                            <img src="img/products/product3.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
                             </div>
                             <div class="card-body card-body-product d-flex flex-column">
-                                <div class="mt-3 ms-1 pt-4 text-start">
+                                <div class="mt-3 ms-1 text-start">
+                                    <img class="p-0" src="img/icons/delivery.png" alt="">
                                     <div class="product-description">
                                         <p class="card-description-text">Артикул: 859654-К</p>
                                         <p class="card-title-product">Унитаз строительный Gesso с бачком</p>
@@ -592,7 +556,7 @@
                                                 <p class="card-text mb-1 me-2 product-price"><strong>30 690
                                                     &#8381;</strong>
                                                 </p>
-                                                <p class="have">В наличии</p>
+                                                <p class="no-have">Под заказ</p>
                                             </div>
                                             <div class="d-flex but-btn">
                                                 <a href="#" class=""><img src="img/icons/Корзина.svg" alt="Корзина"></a>
@@ -607,17 +571,6 @@
 
 
                 </div>
-                <script>
-                    var swiper = new Swiper(".mySwiper3", {
-                        slidesPerView: 2,
-                        spaceBetween: 600,
-                        loop: true,
-                        navigation: {
-                            nextEl: ".swiper-button-next-ventilation",
-                            prevEl: ".swiper-button-prev-ventilation",
-                        },
-                    });
-                </script>
             </div>
 
             <div class="tab-pane fade" id="sewerage" role="tabpanel">
@@ -632,7 +585,6 @@
                                 <button class="btn btn-primary btn-is-hit">Хит продаж</button>
                                 <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
                             </div>
-
                             <img src="img/products/product1.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
@@ -660,19 +612,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card swiper-slide border-0 mt-3 product col-xl-2 col-md-3">
-                            <div class="text-end p-3 only-heart">
-                                <a href="" class="is-heart"><img src="img/icons/Heart.svg" alt=""></a>
+                        <div class="card swiper-slide card-body-product border-0 mt-3 product col-xl-2 col-md-3">
+                            <div class="d-flex justify-content-between hit-heart">
+                                <button class="btn btn-primary btn-is-hit">Хит продаж</button>
+                                <a href=""><img src="img/icons/Избранное.svg" alt=""></a>
                             </div>
-                            <img src="img/products/product3.png" class="card-img-top" alt="...">
+                            <img src="img/products/product2.png" class="card-img-top" alt="...">
                             <div class="text-center btn-photo">
                                 <button class="btn btn-light btn-photo-text">1/3</button>
                             </div>
                             <div class="card-body card-body-product d-flex flex-column">
-                                <div class="mt-3 ms-1 text-start">
-                                    <img class="p-0" src="img/icons/delivery.png" alt="">
+                                <div class="mt-3 ms-1 pt-4 text-start">
                                     <div class="product-description">
-                                        <p class="card-description-text">Артикул: 859654-К</p>
+                                        <p class="card-description-text mt-3">Артикул: 859654-К</p>
                                         <p class="card-title-product">Унитаз строительный Gesso с бачком</p>
                                         <p class="card-description-text">Швеция Бренд <a href="">Gustavsberg</a></p>
                                         <div class="d-flex justify-content-between">
@@ -680,7 +632,7 @@
                                                 <p class="card-text mb-1 me-2 product-price"><strong>30 690
                                                     &#8381;</strong>
                                                 </p>
-                                                <p class="no-have">Под заказ</p>
+                                                <p class="have">В наличии</p>
                                             </div>
                                             <div class="d-flex but-btn">
                                                 <a href="#" class=""><img src="img/icons/Корзина.svg" alt="Корзина"></a>
@@ -693,17 +645,6 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    var swiper = new Swiper(".mySwiper4", {
-                        slidesPerView: 2,
-                        spaceBetween: 600,
-                        loop: true,
-                        navigation: {
-                            nextEl: ".swiper-button-next-sewerage",
-                            prevEl: ".swiper-button-prev-sewerage",
-                        },
-                    });
-                </script>
             </div>
 
         </div>
@@ -711,13 +652,6 @@
 </section>
 
 <section class="popular-brands">
-    <!--    <div class="btn-left-cont">-->
-    <!--        <a href=""><img class="btn-left-brand" src="img/icons/left_arrow_btn.svg" alt=""></a>-->
-    <!--    </div>-->
-    <!--    <div class="btn-right-cont">-->
-    <!--        <a href=""><img class="btn-right-brand"  src="img/icons/right_arrow_btn.svg" alt=""></a>-->
-    <!--    </div>-->
-
     <div class="container">
         <h2 class="popular-brands-title">
             Популярные бренды сантехники
@@ -799,55 +733,6 @@
             </div>
         </div>
     </div>
-    <script>
-        var swiper = new Swiper(".mySwiper5", {
-            slidesPerView: 1,
-            spaceBetween: 100,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next-brands",
-                prevEl: ".swiper-button-prev-brands",
-            },
-        });
-    </script>
-
-    <!--    <div class="container">-->
-    <!--        <h2 class="popular-brands-title">-->
-    <!--            Популярные бренды сантехники-->
-    <!--        </h2>-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-md-2 popular-brands-image mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand1.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand3.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand1.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand4.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand5.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand6.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image  mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand7.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image  mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand8.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image  mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand9.png" alt="">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-2 popular-brands-image  mb-4 brand-card">-->
-    <!--                <img class="img-fluid" src="img/brands/Brand10.png" alt="">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 </section>
 
 <section class="description">
@@ -1025,7 +910,7 @@
                 <div class="col-md-3 footer-form">
                     <p class="footer-bold-text">Будьте в курсе наших новостей</p>
                     <form action="">
-                        <input type="text" class="form-control input-email" placeholder="Укажите ваш Email">
+                        <input type="text" class="form-control input-email" placeholder="" value="Укажите ваш Email">
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary my-4">Отправить</button>
                         </div>
@@ -1053,6 +938,10 @@
     </div>
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

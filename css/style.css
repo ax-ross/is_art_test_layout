@@ -86,7 +86,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 30px 0px #05113F33;
 }
 
 .card {
@@ -156,8 +156,13 @@ body {
 }
 
 .input-email{
+    height: 42px;
     border-radius: 9px;
     border-color: #E0E0E0 !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #212121;
 }
 
 .catalog-btn {
@@ -192,7 +197,6 @@ body {
 }
 
 .input-group-text {
-    /*background-color: #6d2eff;*/
     border-radius: 9px;
 }
 
@@ -308,6 +312,7 @@ body {
 }
 
 .btn-photo-text{
+
     padding-top: 2px;
     padding-bottom: 2px;
     width: 70px;
@@ -323,7 +328,7 @@ body {
 .hit-heart{
     padding-top: 24px;
     padding-left: 22px;
-    padding-right: 42px;
+    padding-right: 25px;
 }
 
 
@@ -336,6 +341,7 @@ body {
 
 .card-body-product{
     padding-top: 0;
+    margin-bottom: 30px;
 }
 
 .product-description{
@@ -388,7 +394,7 @@ body {
 }
 
 .popular-brands{
-    margin-top: 55px;
+    margin-top: 10px;
 }
 
 .popular-brands-title{
@@ -401,7 +407,7 @@ body {
 
 
 .description{
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 .description-title-text {
@@ -601,16 +607,6 @@ h2 {
     margin-top: 15px;
 }
 
-/*.btn-right-cont{*/
-/*    display: none;*/
-/*}*/
-
-/*.btn-left-cont{*/
-/*    display: none;*/
-/*}*/
-
-
-/* swiper */
 .arrow-swiper{
     position: relative;
 }
@@ -633,9 +629,6 @@ h2 {
     padding-right: 20px !important;
 }
 
-/*.swiper-button-next::after {*/
-/*    content: none;*/
-/*}*/
 
 .swiper-button-prev-unique {
     background-image: url("../img/icons/left_arrow_btn.svg");
@@ -758,6 +751,39 @@ h2 {
     width: 1280px !important;
 }
 
+.mySwiper{
+    padding-top: 15px !important;
+    margin-top: -15px !important;
+    margin-left: -27px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.mySwiper2{
+    padding-top: 15px !important;
+    margin-top: -15px !important;
+    margin-left: -27px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.mySwiper3{
+    padding-top: 15px !important;
+    margin-top: -15px !important;
+    margin-left: -27px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-bottom: 30px;
+}
+.mySwiper4{
+    padding-top: 15px !important;
+    margin-top: -15px !important;
+    margin-left: -27px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-bottom: 30px;
+}
+
+
 .mySwiper5{
     padding-left: 0 !important;
 }
@@ -770,10 +796,19 @@ h2 {
     content: none !important;
 }
 
-/*.mySwiper3 .swiper-slide{*/
-/*    width: 300px !important;*/
-/*}*/
+.carousel-control-prev-icon{
+    background-image: url("../img/icons/btn-left-white.svg");
+    height: 50px !important;
+    width: 50px !important;
+    margin-left: 70px !important;
+}
 
+.carousel-control-next-icon{
+    background-image: url("../img/icons/btn-right-white.svg");
+    height: 50px !important;
+    width: 50px !important;
+    margin-left: -100px !important;
+}
 
 @media only screen and (max-width: 1200px) {
     .logo, .search, .cart-favorite {
@@ -803,59 +838,3 @@ h2 {
         margin-top: -10px;
     }
 }
-
-/*@media only screen and (min-width: 1900px){*/
-/*    !* fds*!*/
-/*    .btn-right-cont{*/
-/*        display: block;*/
-/*        position: relative;*/
-/*    }*/
-
-/*    .btn-left-cont{*/
-/*        display: block;*/
-/*        position: relative;*/
-/*    }*/
-
-/*    .btn-left{*/
-/*        position: absolute;*/
-/*        left: 150px;*/
-/*        top: 400px;*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*    .btn-right{*/
-/*        position: absolute;*/
-/*        left: 1702px;*/
-/*        top: 400px;*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*    .btn-left-preview{*/
-/*        position: absolute;*/
-/*        left: 150px;*/
-/*        top: 265px;*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*    .btn-right-preview{*/
-/*        position: absolute;*/
-/*        left: 1702px;*/
-/*        top: 265px;*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*    .btn-left-brand{*/
-/*        position: absolute;*/
-/*        left: 150px;*/
-/*        top: 200px;*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*    .btn-right-brand{*/
-/*        position: absolute;*/
-/*        left: 1702px;*/
-/*        top: 200px;*/
-/*        z-index: 999;*/
-/*    }*/
-
-/*}*/
