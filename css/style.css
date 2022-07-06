@@ -633,9 +633,9 @@ h2 {
     padding-right: 20px !important;
 }
 
-.swiper-button-next::after {
-    content: none;
-}
+/*.swiper-button-next::after {*/
+/*    content: none;*/
+/*}*/
 
 .swiper-button-prev-unique {
     background-image: url("../img/icons/left_arrow_btn.svg");
@@ -649,6 +649,85 @@ h2 {
     width: 60px !important;
 
 }
+
+.swiper-button-next-plumbing {
+    background-image: url("../img/icons/right_arrow_btn.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1385px;
+    top: 290px;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper-button-prev-plumbing {
+    background-image: url("../img/icons/left_arrow_btn.svg");
+    position: absolute;
+    top: 290px;
+    left: -165px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper-button-next-ventilation {
+    background-image: url("../img/icons/right_arrow_btn.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1385px;
+    top: 290px;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper-button-prev-ventilation {
+    background-image: url("../img/icons/left_arrow_btn.svg");
+    position: absolute;
+    top: 290px;
+    left: -165px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper-button-next-sewerage {
+    background-image: url("../img/icons/right_arrow_btn.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1385px;
+    top: 290px;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
+.swiper-button-prev-sewerage{
+    background-image: url("../img/icons/left_arrow_btn.svg");
+    position: absolute;
+    top: 290px;
+    left: -165px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 60px !important;
+
+}
+
 .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
     content: none !important;
 }
@@ -656,6 +735,10 @@ h2 {
 .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
     content: none !important;
 }
+
+/*.mySwiper3 .swiper-slide{*/
+/*    width: 300px !important;*/
+/*}*/
 
 
 @media only screen and (max-width: 1200px) {
